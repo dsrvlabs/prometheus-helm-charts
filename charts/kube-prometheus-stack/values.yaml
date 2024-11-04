@@ -2522,7 +2522,6 @@ prometheusOperator:
       #   argocd.argoproj.io/hook-delete-policy: HookSucceeded
       podAnnotations: {}
       nodeSelector:
-      - name: node-1-de
       affinity: {}
       tolerations: []
 
