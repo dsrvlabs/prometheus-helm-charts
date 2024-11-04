@@ -794,7 +794,7 @@ alertmanager:
     ## ref: https://kubernetes.io/docs/user-guide/node-selection/
     ##
     nodeSelector:
-    - name: node-1-de
+      name: node-1-de
 
     ## Define resources requests and limits for single Pods.
     ## ref: https://kubernetes.io/docs/user-guide/compute-resources/
@@ -2448,7 +2448,7 @@ prometheusOperator:
       ## ref: https://kubernetes.io/docs/user-guide/node-selection/
       ##
       nodeSelector:
-      - name: node-1-de
+        name: node-1-de
 
       ## Tolerations for use with node taints
       ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
@@ -2528,7 +2528,7 @@ prometheusOperator:
       ## SecurityContext holds pod-level security attributes and common container settings.
       ## This defaults to non root user with uid 2000 and gid 2000. *v1.PodSecurityContext  false
       ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
-      ##
+      ##`
       securityContext:
         runAsGroup: 2000
         runAsNonRoot: true
@@ -2787,7 +2787,7 @@ prometheusOperator:
   ## ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
   nodeSelector:
-  - name: node-1-de
+    name: node-1-de
 
   ## Tolerations for use with node taints
   ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
@@ -3583,7 +3583,7 @@ prometheus:
     ## ref: https://kubernetes.io/docs/user-guide/node-selection/
     ##
     nodeSelector:
-    - name: node-1-de
+      name: node-1-de
 
     ## Secrets is a list of Secrets in the same namespace as the Prometheus object, which shall be mounted into the Prometheus Pods.
     ## The Secrets are mounted into /etc/prometheus/secrets/. Secrets changes after initial creation of a Prometheus object are not
@@ -4684,7 +4684,7 @@ thanosRuler:
     ## ref: https://kubernetes.io/docs/user-guide/node-selection/
     ##
     nodeSelector:
-    - name: node-1-de
+      name: node-1-de
 
     ## Define resources requests and limits for single Pods.
     ## ref: https://kubernetes.io/docs/user-guide/compute-resources/
